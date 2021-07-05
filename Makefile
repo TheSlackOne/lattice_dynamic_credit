@@ -10,6 +10,7 @@ build:
 run:
 	docker run -it --name lattice_geth \
 		-p 8545:8545 \
+		-p 8546:8546 \
 		-p 30303:30303 \
 		-v /ethereum-node-data:/root/.ethereum \
 		lattice_geth:0.0.1
